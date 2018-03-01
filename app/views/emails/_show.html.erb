@@ -1,0 +1,11 @@
+<div class="options">
+  <%= link_to 'Destroy', @email, method: :delete, :remote => true, :class => "delete_email" %>
+  <%= link_to 'Back', emails_path %>
+</div>
+
+<div class="mail">
+
+  <h1> <%= @email.object %> </h1>
+  <p><%= @email.body %></p>
+
+</div>

@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<div class="options">
+  <%= link_to 'Destroy', @email, method: :delete, data: { confirm: 'Are you sure?' }, class:"delete_email" %>
+  <%= link_to 'Back', emails_path %>
+</div>
+
+<div class="mail">
+
+  <h1> <%= @email.object %> </h1>
+  <p><%= @email.body %></p>
+
+</div>
